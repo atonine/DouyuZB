@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="wKc-hC-kOi">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="165"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yhz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSc-Ru-EAM">
+                        <rect key="frame" x="0.0" y="170" width="182" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-SL-vtU">
+                        <rect key="frame" x="114" y="8" width="60" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.37162885273972601" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="OlD-HA-pAF"/>
+                            <constraint firstAttribute="width" constant="60" id="W3f-ea-OOa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4U-DS-i0R">
+                        <rect key="frame" x="0.0" y="191" width="34" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="c9d-zd-BQt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="广州市">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wKc-hC-kOi" secondAttribute="bottom" constant="50" id="6iy-6U-4g0"/>
+                <constraint firstItem="H4U-DS-i0R" firstAttribute="top" secondItem="lSc-Ru-EAM" secondAttribute="bottom" constant="5" id="8KI-U1-MTm"/>
+                <constraint firstItem="Z78-SL-vtU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Eo4-iS-Rga"/>
+                <constraint firstItem="lSc-Ru-EAM" firstAttribute="top" secondItem="wKc-hC-kOi" secondAttribute="bottom" constant="5" id="KV6-mQ-OO5"/>
+                <constraint firstAttribute="trailing" secondItem="Z78-SL-vtU" secondAttribute="trailing" constant="8" id="Npi-yN-23M"/>
+                <constraint firstItem="wKc-hC-kOi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rnf-0w-Sky"/>
+                <constraint firstItem="wKc-hC-kOi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bw3-3f-vjW"/>
+                <constraint firstItem="H4U-DS-i0R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e3d-gU-jFG"/>
+                <constraint firstItem="lSc-Ru-EAM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eif-Rh-VEG"/>
+                <constraint firstAttribute="bottom" secondItem="H4U-DS-i0R" secondAttribute="bottom" constant="10" id="rc3-Nb-N5Z"/>
+                <constraint firstAttribute="trailing" secondItem="wKc-hC-kOi" secondAttribute="trailing" id="sug-1M-hx6"/>
+                <constraint firstAttribute="trailing" secondItem="lSc-Ru-EAM" secondAttribute="trailing" id="yWd-Kc-16h"/>
+            </constraints>
+            <size key="customSize" width="163" height="163"/>
+            <connections>
+                <outlet property="cityButton" destination="H4U-DS-i0R" id="LKW-5o-3n5"/>
+                <outlet property="iconImageView" destination="wKc-hC-kOi" id="3AO-wd-hzx"/>
+                <outlet property="nickNameLabel" destination="lSc-Ru-EAM" id="wbF-lU-bGL"/>
+                <outlet property="onlineButton" destination="Z78-SL-vtU" id="xI0-5P-qOR"/>
+            </connections>
+            <point key="canvasLocation" x="-103" y="-181.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
